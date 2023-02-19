@@ -1,23 +1,20 @@
-import 'package:adminapp/examine.dart';
+import 'package:adminapp/funded.dart';
 import 'package:flutter/material.dart';
-import 'package:adminapp/main.dart';
 
-//เพิ่มทุน
-
-class Capital extends StatefulWidget {
-  const Capital({super.key});
+class Questions1 extends StatefulWidget {
+  const Questions1({super.key});
 
   @override
-  State<Capital> createState() => _CapitalState();
+  State<Questions1> createState() => _QuestionsState();
 }
 
-class _CapitalState extends State<Capital> {
+class _QuestionsState extends State<Questions1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(30.0),
-        child: Center(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(30.0),
           child: Column(
             children: [
               Image.network(
@@ -35,7 +32,7 @@ class _CapitalState extends State<Capital> {
 
                       child: Row(
                       children: [
-                        Text("เพิ่มทุนการศึกษา" ,
+                        Text("คำถามในการสัมภาษณ์",
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.white),),
@@ -44,21 +41,10 @@ class _CapitalState extends State<Capital> {
               ),
 
               SizedBox(height: 30,),
-
-              Row(
+                
+                Row(
                   children: 
-                  [Text("เพิ่มชื่อทุน",
-                  style: TextStyle(fontSize: 20),
-                  textAlign: TextAlign.right,) ],
-                  ),
-
-                  TextField(),
-              
-              SizedBox(height: 30,),
-
-              Row(
-                  children: 
-                  [Text("เพิ่มรายละเอียดทุน",
+                  [Text("คำถามที่ 1",
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.right,) ],
                   ),
@@ -66,38 +52,72 @@ class _CapitalState extends State<Capital> {
                   TextField(),
 
               SizedBox(height: 30,),
-
-              Row(
+                
+                Row(
                   children: 
-                  [Text("เพิ่มวันสัมภาษณ์",
+                  [Text("คำถามที่ 2",
+                  style: TextStyle(fontSize: 20),
+                  textAlign: TextAlign.right,) ],
+                  ),
+
+                  TextField(),
+
+              SizedBox(height: 30,),
+                
+                Row(
+                  children: 
+                  [Text("คำถามที่ 3",
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.right,) ],
                   ),
 
                   TextField(),
               
+              SizedBox(height: 30,),
+                
+                Row(
+                  children: 
+                  [Text("คำถามที่ 4",
+                  style: TextStyle(fontSize: 20),
+                  textAlign: TextAlign.right,) ],
+                  ),
+
+                  TextField(),
+
+              SizedBox(height: 30,),
+                
+                Row(
+                  children: 
+                  [Text("คำถามที่ 5",
+                  style: TextStyle(fontSize: 20),
+                  textAlign: TextAlign.right,) ],
+                  ),
+
+                  TextField(),
+
+
               Row(
                 children: <Widget>[
-                  const SizedBox(
-                    height: 100,
-                    width: 150,
-                  ),
-                  ElevatedButton(
+                  const SizedBox(height: 100,width: 150,),
+                  
+                ElevatedButton(
 
-                    style: ElevatedButton.styleFrom(
+                  style: ElevatedButton.styleFrom(
                 backgroundColor: Color.fromARGB(255, 221, 139, 236), foregroundColor: Color.fromARGB(255, 255, 255, 255)),
 
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: ((context) {
-                        return Examine();
-                      })));
-                    },
-                    child: const 
-                    Text("เพิ่มทุน"),
-                  ),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                      return Funded();
+                    })));
+                  },
+                  child: const Text("ยืนยัน"),
+
+                ),
                 ],
               )
+
+
+
             ],
           ),
         ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'examine3.dart';
+
 //รายชื่อผู้สมัครขอทุนการศึกษาตามความประสงค์ของผู้บริจาค
 
 class Examine2 extends StatefulWidget {
@@ -41,59 +43,52 @@ class _Examine2State extends State<Examine2> {
 
                 SizedBox(height: 30,),
 
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
+                SizedBox(
+                  width: 400.0,
+                  height: 100.0,
+                  child: ElevatedButton(
 
-                      child: Row(
+                    style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 221, 139, 236), foregroundColor: Color.fromARGB(255, 255, 255, 255)),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return Examine3();
+                      })));
+                    },
+                    child: Row( 
                       children: [
-                        Text("นายไก่" ,
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white),),
-                      ],
+                        const Text("นายไก่",
+                        style: TextStyle(fontSize: 20),
+                        textAlign: TextAlign.left,)],
+                          ),
+                          ),
                     ),
-              ),
 
-                SizedBox(height: 30,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-
-                      child: Row(
-                      children: [
-                        Text("นายไข่" ,
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white,
-                          ),),
-                      ],
-                    ),
-              ),
 
               SizedBox(height: 30,),
 
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
+              SizedBox(
+                  width: 400.0,
+                  height: 100.0,
+                  child: ElevatedButton(
 
-                      child: Row(
+                    style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 221, 139, 236), foregroundColor: Color.fromARGB(255, 255, 255, 255)),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return Examine3();
+                      })));
+                    },
+                    child: Row( 
                       children: [
-                        Text("" ,
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white,
-                          ),),
-                      ],
+                        const Text("นายไข่",
+                        style: TextStyle(fontSize: 20),
+                        textAlign: TextAlign.left,)],
+                          ),
+                          ),
                     ),
-              ),
 
                 ],
               )

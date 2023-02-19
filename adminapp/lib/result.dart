@@ -1,4 +1,6 @@
+import 'package:adminapp/funded.dart';
 import 'package:flutter/material.dart';
+
 
 //ผลการสัมภาษณ์
 
@@ -30,44 +32,32 @@ class _ResultState extends State<Result> {
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 30,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-
-                      child: Row(
-                      children: [
-                        Text("คำถาม" ,
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white),),
-                      ],
-                    ),
-              ),
 
                 SizedBox(height: 30,),
 
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
+                SizedBox(
+                  width: 400.0,
+                  height: 100.0,
+                  child: ElevatedButton(
 
-                      child: Row(
+                    style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 221, 139, 236), foregroundColor: Color.fromARGB(255, 255, 255, 255)),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return Funded();
+                      })));
+                    },
+                    child: Row( 
                       children: [
-                        Text("รายชื่อผู้ที่ได้รับทุน" ,
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white,
-                          ),),
-                      ],
+                        const Text("รายชื่อผู้ที่ได้รับทุน",
+                        style: TextStyle(fontSize: 20),
+                        textAlign: TextAlign.left,)],
+                          ),
+                          ),
                     ),
-              ),
 
-              SizedBox(height: 30,),
+              
 
 
                 ],

@@ -1,16 +1,17 @@
-import 'package:adminapp/%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B7%E0%B8%AD/examine33.dart';
+import 'package:adminapp/%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B9%8C/examine2.dart';
+import 'package:adminapp/%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B9%8C/show_datacapical.dart';
 import 'package:flutter/material.dart';
 
-//รายชื่อผู้สมัครขอทุนช่วยเหลือค่าครองชีพ
+//ทุนการศึกษาตามความประสงค์ของผู้บริจาค
 
-class Examine22 extends StatefulWidget {
-  const Examine22({super.key});
+class Show_Capital extends StatefulWidget {
+  const Show_Capital({super.key});
 
   @override
-  State<Examine22> createState() => _Examine22State();
+  State<Show_Capital> createState() => _Show_CapitalState();
 }
 
-class _Examine22State extends State<Examine22> {
+class _Show_CapitalState extends State<Show_Capital> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,11 +26,12 @@ class _Examine22State extends State<Examine22> {
                 SizedBox(height: 50,),
                 
                 Row(
-                  children: 
-                  [Text("รายชื่อผู้สมัครขอทุนช่วยเหลือค่าครองชีพ",
+                  children: [
+                  const Text("ทุนการศึกษา \n ตามความประสงค์ของผู้บริจาค",
                   style: TextStyle(fontSize: 20),
-                  textAlign: TextAlign.right,) ],
+                  textAlign: TextAlign.left,)],
                   ),
+
 
                 SizedBox(height: 30,),
 
@@ -43,12 +45,12 @@ class _Examine22State extends State<Examine22> {
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: ((context) {
-                        return Examine33();
+                        return Show_datacapical();
                       })));
                     },
                     child: Row( 
                       children: [
-                        const Text("นายดำ ใจดี",
+                        const Text("ดูทุน",
                         style: TextStyle(fontSize: 20),
                         textAlign: TextAlign.left,)],
                           ),
@@ -68,12 +70,12 @@ class _Examine22State extends State<Examine22> {
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: ((context) {
-                        return Examine33();
+                        return Examine2();
                       })));
                     },
                     child: Row( 
                       children: [
-                        const Text("นายแดง",
+                        const Text("รายชื่อผู้สมัครทุน",
                         style: TextStyle(fontSize: 20),
                         textAlign: TextAlign.left,)],
                           ),
@@ -82,10 +84,10 @@ class _Examine22State extends State<Examine22> {
 
 
                 ],
-              )
+              ),
+          ),
         
             ),
-          ),
     );
   }
 }

@@ -16,11 +16,12 @@ class _Examine3State extends State<Examine3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
+      body: SingleChildScrollView(child: 
+      Padding(
         padding: const EdgeInsets.all(30.0),
           child: Center(
             child: Column(
-              children: [ 
+              children: <Widget>[ 
                 Image.network("https://upload.wikimedia.org/wikipedia/th/thumb/0/00/University_of_Phayao_Logo.svg/1200px-University_of_Phayao_Logo.svg.png",
                 height: 100,),
 
@@ -33,16 +34,8 @@ class _Examine3State extends State<Examine3> {
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
-
-              
+                TextField(),
+            
                 SizedBox(height: 30,),
                 
                 Row(
@@ -52,34 +45,20 @@ class _Examine3State extends State<Examine3> {
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
+                TextField(),
 
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
 
               SizedBox(height: 30,),
-              
-
-              
-Row(
+                            
+                Row(
                   children: 
                   [Text("วัน/เดือน/ปีเกิด",
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
+                  TextField(),
 
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
 
               SizedBox(height: 30,),
                 
@@ -90,15 +69,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
-
+                TextField(),
 
               SizedBox(height: 30,),
                 
@@ -109,14 +80,8 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
+                TextField(),
 
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
 
               SizedBox(height: 30,),
                 
@@ -127,14 +92,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -145,14 +103,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -163,14 +114,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -181,14 +125,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -199,14 +136,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -217,14 +147,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -235,14 +158,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -253,14 +169,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -271,14 +180,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 167, 161, 168),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 300,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -289,17 +191,8 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
+                TextField(),
 
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 167, 161, 168),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 300,width: 500,
-              ),
-
-              SizedBox(height: 30,),
-                
                 Row(
                   children: 
                   [Text("สำเนาทะเบียนบ้านของนิสิต 1ฉบับ",
@@ -307,14 +200,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 167, 161, 168),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 300,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -325,14 +211,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 167, 161, 168),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 300,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -343,14 +222,7 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 167, 161, 168),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 300,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -361,49 +233,19 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 167, 161, 168),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 300,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
                 Row(
                   children: 
-                  [Text("สำเนาเอกสารประกอบการกู้เงิน",
+                  [Text("สำเนาเอกสารประกอบการกู้เงิน \n ของสถาบันต่างๆ(ถ้ามี) \n ของบิดา มารดา กรณมีหนี้สิน",
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.right,) ],
                   
                   ),
 
-                Row(
-                  children: 
-                  [Text("ของสถาบันต่างๆ(ถ้ามี)",
-                  style: TextStyle(fontSize: 20),
-                  textAlign: TextAlign.right,) ],
-                  
-                ),
-
-                Row(
-                  children: 
-                  [Text("ของบิดา มารดา กรณมีหนี้สิน",
-                  style: TextStyle(fontSize: 20),
-                  textAlign: TextAlign.right,) ],
-                  
-                  ),
-
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 167, 161, 168),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 300,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 30,),
                 
@@ -414,20 +256,13 @@ Row(
                   textAlign: TextAlign.right,) ],
                   ),
 
-                SizedBox(height: 20,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 167, 161, 168),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 300,width: 500,
-              ),
+                  TextField(),
 
               SizedBox(height: 50,),
               
               Row(
                 children: <Widget>[
-                  const SizedBox(height: 100,width: 230,),
+                  const SizedBox(height: 100,width: 100,),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: ((context) {
@@ -458,7 +293,7 @@ Row(
               ),
           ),
         
-            ),
+            ),),
           );
   }
 }

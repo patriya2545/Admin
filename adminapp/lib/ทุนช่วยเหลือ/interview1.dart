@@ -1,3 +1,5 @@
+
+import 'package:adminapp/%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B7%E0%B8%AD/questions1.dart';
 import 'package:flutter/material.dart';
 
 //รอสัมภาษณ์
@@ -27,78 +29,63 @@ class _Interview1State extends State<Interview1> {
                 
                 Row(
                   children: 
-                  [Text("รายชื่อผู้ผ่านการสมัครทุนการศึกษา",
-                  style: TextStyle(fontSize: 20),
-                  textAlign: TextAlign.right,) ],
-                  ),
-                
-                Row(
-                  children: 
-                  [Text("ตามความประสงค์ของผู้บริจาค",
+                  [Text("รายชื่อผู้ผ่านการสมัครทุนช่วยเหลือ",
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.right,) ],
                   ),
 
+                SizedBox(height: 30,),
+
+                SizedBox(
+                  width: 400.0,
+                  height: 100.0,
+                  child: ElevatedButton(
+
+                    style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 221, 139, 236), foregroundColor: Color.fromARGB(255, 255, 255, 255)),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return Questions1();
+                      })));
+                    },
+                    child: Row( 
+                      children: [
+                        const Text("นายแดง",
+                        style: TextStyle(fontSize: 20),
+                        textAlign: TextAlign.left,)],
+                          ),
+                          ),
+                    ),
 
 
                 SizedBox(height: 30,),
 
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
+                SizedBox(
+                  width: 400.0,
+                  height: 100.0,
+                  child: ElevatedButton(
 
-                      child: Row(
+                    style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(255, 221, 139, 236), foregroundColor: Color.fromARGB(255, 255, 255, 255)),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return Questions1();
+                      })));
+                    },
+                    child: Row( 
                       children: [
-                        Text("นายแดงแดง" ,
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white),),
-                      ],
+                        const Text("นายดำ ใจดี",
+                        style: TextStyle(fontSize: 20),
+                        textAlign: TextAlign.left,)],
+                          ),
+                          ),
                     ),
-              ),
 
-                SizedBox(height: 30,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-
-                      child: Row(
-                      children: [
-                        Text("นายดำ" ,
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white,
-                          ),),
-                      ],
-                    ),
-              ),
-
-              SizedBox(height: 30,),
-
-                Container( padding: const EdgeInsets.all(30.0),
-                 decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 221, 139, 236),
-                      borderRadius: BorderRadius.circular(30)),
-                      height: 100,width: 500,
-
-                      child: Row(
-                      children: [
-                        Text("" ,
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white,
-                          ),),
-                      ],
-                    ),
-              ),
 
                 ],
-              )
+              ),
         
             ),
           ),
