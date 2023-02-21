@@ -17,6 +17,12 @@ class _Examine33State extends State<Examine33> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        backgroundColor: Color.fromARGB(255, 221, 139, 236,),
+        title: 
+          Text("ข้อมูลผู้สมัครทุน",
+          style: TextStyle(fontSize: 25),),),
+          
       body:
       SingleChildScrollView (child: Padding(
         padding: const EdgeInsets.all(30.0),
