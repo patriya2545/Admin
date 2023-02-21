@@ -16,6 +16,12 @@ class _InterviewState extends State<Interview> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        backgroundColor: Color.fromARGB(255, 221, 139, 236,),
+        title: 
+          Text("รายชื่อผู้ผ่านการสมัครทุน",
+          style: TextStyle(fontSize: 25),),),
+
       body: Padding(
         padding: const EdgeInsets.all(30.0),
           child: Center(

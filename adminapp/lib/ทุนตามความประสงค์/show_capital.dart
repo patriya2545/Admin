@@ -15,11 +15,18 @@ class _Show_CapitalState extends State<Show_Capital> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        backgroundColor: Color.fromARGB(255, 221, 139, 236,),
+        title: 
+          Text("ทุน",
+          style: TextStyle(fontSize: 25),),),
+
       body: Padding(
         padding: const EdgeInsets.all(30.0),
+        
           child: Center(
             child: Column(
-              children: [ 
+              children: <Widget>[ 
                 Image.network("https://upload.wikimedia.org/wikipedia/th/thumb/0/00/University_of_Phayao_Logo.svg/1200px-University_of_Phayao_Logo.svg.png",
                 height: 100,),
 

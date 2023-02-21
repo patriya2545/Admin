@@ -12,6 +12,12 @@ class _QuestionsState extends State<Questions> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        backgroundColor: Color.fromARGB(255, 221, 139, 236,),
+        title: 
+          Text("คำถาม",
+          style: TextStyle(fontSize: 25),),),
+
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(30.0),

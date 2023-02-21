@@ -16,6 +16,12 @@ class _Examine3State extends State<Examine3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        backgroundColor: Color.fromARGB(255, 221, 139, 236,),
+        title: 
+          Text("ข้อมูลผู้สมัครทุน",
+          style: TextStyle(fontSize: 25),),),
+
       body: SingleChildScrollView(child: 
       Padding(
         padding: const EdgeInsets.all(30.0),
@@ -262,7 +268,7 @@ class _Examine3State extends State<Examine3> {
               
               Row(
                 children: <Widget>[
-                  const SizedBox(height: 100,width: 100,),
+                  const SizedBox(height: 100,width: 150,),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: ((context) {
