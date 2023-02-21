@@ -15,6 +15,12 @@ class _Examine2State extends State<Examine2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        backgroundColor: Color.fromARGB(255, 221, 139, 236,),
+        title: 
+          Text("รายชื่อผู้สมัครทุน",
+          style: TextStyle(fontSize: 25),),),
+
       body: Padding(
         padding: const EdgeInsets.all(30.0),
           child: Center(
