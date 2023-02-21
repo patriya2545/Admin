@@ -15,6 +15,12 @@ class _Show_capical1State extends State<Show_capical1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        backgroundColor: Color.fromARGB(255, 221, 139, 236,),
+        title: 
+          Text("ทุน",
+          style: TextStyle(fontSize: 25),),),
+          
       body: Padding(
         padding: const EdgeInsets.all(30.0),
           child: Center(
